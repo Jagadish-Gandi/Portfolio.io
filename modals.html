@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive CSS Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .work {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+    .work pre {
+      font-size: 1.2rem;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 -10px; /* Add negative margin to account for padding */
+    }
+    .col-md-4 {
+      width: calc(50% - 20px); /* Show two columns on larger screens */
+      margin: 10px;
+      background-color: whitesmoke;
+      border: 1px solid white;
+      padding: 10px;
+      text-align: center;
+      box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+    .col-md-4 img {
+      width: 100%; /* Make images responsive within their container */
+      max-width: 400px; /* Set max width for larger images */
+      padding: 10px;
+      background-color: whitesmoke;
+      border: 1px solid white;
+      margin: 0 auto;
+    }
+    .work-card {
+    border: 2px solid white; /* Add a border with crimson color */
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Add a light background color */
+    border-radius: 10px; /* Add rounded corners */
+    margin-bottom: 30px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.work-card:hover {
+    border-color: black; /* Change border color on hover */
+    background-color: white; /* Change background color on hover */
+}
+
+/* Add any additional styles as needed */
+
+    .work a {
+      text-decoration: none;
+      margin-right: 10px;
+      font-size: 1.2rem;
+      color: black;
+      background-color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .work a:hover {
+      color: white;
+      background-color: black;
+    }
+    .work p {
+      font-size: 1.5rem;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .col-md-4 {
+        width: calc(100% - 20px); /* Show one column on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="work">
+        <h2 style="color: black; font-size: 40px;" class="title">Work</h2>
+        <pre style="color: crimson;" align="left: 40%">Sample Work.</pre>
+    </div>
+    <div class="container">
+        <div class="col-md-4">
+            <div class="work-card">
+                <img src="Moviesite.png" alt="">
+                <p>MovieSearch Site</p>
+                <a href="https://jagadish-gandi.github.io/Moviesearch.io/">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="work-card">
+                <img src="catering.png" alt="">
+                <p>Catering Website</p>
+                <a href="http://jagadishcateringsite.42web.io/index.php?i=2">View</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="work-card">
+                <img src="Todolist.png" alt="">
+                <p>To Do List</p>
+                <a href="#">View</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

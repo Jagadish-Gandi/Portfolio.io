@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>My Portfolio</title>
+  <style>
+    /* Your existing CSS styles here */
+
+    /* Additional style for the modal */
+    .modal-dialog {
+      max-width: 800px; /* Adjust as needed */
+    }
+        /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Project section styling */
+.project-section {
+  padding: 2rem;
+  border: 2px solid green;
+
+}
+
+#project {
+  margin-bottom: 2rem;
+}
+
+#project img {
+  max-width: 100%;
+  width: 400px;
+  border: 2px solid green;
+
+}
+
+#project h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+#project p {
+  margin-top: 0.5rem;
+}
+
+#project a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Your header content here -->
+  </header>
+  
+  <!-- ... (Your existing HTML code) ... -->
+
+<section id="projects" class="project-section">
+  <h2>Projects</h2>
+  <div class="row">
+    <div class="col-md-4 project">
+      <img src="Moviesite.png" alt="Project 3">
+      <h3>MovieSearch site</h3>
+      <p></p>
+      <a href="https://jagadish-gandi.github.io/Moviesearch.io/" target="_blank">View Project</a>
+      <a href="#" data-toggle="modal" data-target="#descriptionModal3">Description</a>
+    </div>
+    <div class="col-md-4 project">
+      <img src="catering.png" alt="Project 2">
+      <h3>Catering Website</h3>
+      <p></p>
+      <a href="http://jagadishcateringsite.42web.io/index.php?i=2" target="_blank">View Project</a>
+      <a href="#" data-toggle="modal" data-target="#descriptionModal2">Description</a>
+    </div>
+    <div class="col-md-4 project">
+      <img src="Todolist.png" alt="Project 1">
+      <h3>Todo List</h3>
+      <p></p>
+      <a href="#" data-toggle="modal" data-target="#projectModal1">View Project</a>
+      <a href="#" data-toggle="modal" data-target="#descriptionModal1">Description</a>
+    </div>
+  </div>
+  
+  <!-- More projects... -->
+</section>
+
+<!-- ... (Your existing HTML code) ... -->
+
+  
+  <!-- Modals -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label" aria-hidden="true">
+    <!-- Project 1 Modal content -->
+  </div>
+
+  <div class="modal fade" id="descriptionModal1" tabindex="-1" role="dialog" aria-labelledby="descriptionModal1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal1Label">Project 1 Description</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>This is a detailed description of Project 1.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label" aria-hidden="true">
+    <!-- Project 2 Modal content -->
+  </div>
+
+  <div class="modal fade" id="descriptionModal2" tabindex="-1" role="dialog" aria-labelledby="descriptionModal2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModal2Label">Catering Website</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>This is a detailed description of Catering Website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="descriptionModal3" tabindex="-1" role="dialog" aria-labelledby="descriptionModal3Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="descriptionModal3Label">MovieSearch Website
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>This is a detailed description of MovieSearch website.</p>
+          <p>The purpose of this website is to allow users to search for movie information by entering a movie name. The website sends a request to a movie API, retrieves relevant data, and displays it on the page. It's a simple way for users to quickly access details about movies they're interested in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More modals... -->
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
